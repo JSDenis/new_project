@@ -16,17 +16,17 @@ const getResource = async (url) => {
 }
 
 const getAllRadio = async () => {
-  const res = await getResource(JSON_RADIO);
+  const res = await getResource(RADIO);
   return res.map(_transformRadio).slice(0, 5);
 }
 
 const getRadio = async (id) => {
-  const res = await getResource(`${JSON_RADIO}/${id}`);
+  const res = await getResource(`${RADIO}/${id}`);
   return res;
 }
 
 const getRadioCurrent = async (id) => {
-  const res = await getResource(`${JSON_RADIO}/${id}`);
+  const res = await getResource(`${RADIO}/${id}`);
   return res.tracklistLocal[0].preview;
 }
 

@@ -1,4 +1,4 @@
-import { getAllRadio, getAllPlaylist } from "../utils/getDataMusic";
+import { getAllRadio, getAllPlaylist } from "../utils/getDataLocal";
 
 const createRadioList = async () => {
   const dataItems = await getAllRadio();

@@ -14,7 +14,7 @@ import { createRadioList, createPlayList } from "../components/music";
 
 
 
-const Home = async () => {
+const Home = async () => { 
   const radioList = await createRadioList();
   const playList = await createPlayList();
   const view = `

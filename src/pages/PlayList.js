@@ -3,7 +3,7 @@ import {getPlayList} from "../utils/getDataMusic";
 
 
 
-const PlayList = async () => {
+const PlayList = async () => { 
   const id = getHash();
   const radio = await getPlayList(id);
   const view = `
